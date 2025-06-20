@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MGM VARVELS | Hoist Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>MGM VARVELS</h1>
+    <h2>Hoist - Lifting Torque & Drum Speed Calculator</h2>
+  </header>
+  <main>
+    <section class="inputs">
+      <label>Useful Mass (kg): <input type="number" id="usefulMass" /></label>
+      <label>Structure Mass (kg): <input type="number" id="structureMass" /></label>
+      <label>Rope Diameter (mm): <input type="number" id="ropeDiameter" /></label>
+      <label>Drum Pitch Diameter (mm): <input type="number" id="drumDiameter" /></label>
+      <label>Lifting Speed (m/min): <input type="number" id="liftingSpeed" /></label>
+      <button onclick="calculate()">Calculate</button>
+    </section>
+    <section class="outputs">
+      <p>Lifting Torque (Nm): <span id="torqueResult">--</span></p>
+      <p>Drum Speed (rpm): <span id="speedResult">--</span></p>
+      <p>Lifting Power (kW): <span id="powerResult">--</span></p>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
